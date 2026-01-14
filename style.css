@@ -2,7 +2,7 @@
     scroll-behavior: smooth;
 }
 .hero-bg {
-    background-image: url('catherine_backsplash.jpg'); /* Replace with actual image URL */
+    background-image: url('Catherine_backsplash.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -18,6 +18,6 @@
     background: rgba(0, 0, 0, 0.3); /* Subtle dark overlay for text readability */
 }
 .logo img {
-    height: 80px; 
+    height: 80px;
     width: auto;
-  }
+}
