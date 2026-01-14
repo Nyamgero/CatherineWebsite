@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wellness to Wholeness Resource Hub</title>
+    <meta name="description" content="Discover a balanced life through essential oils, nutrition, exercise, and mindfulness at Wellness to Wholeness Resource Hub.">
+    <link rel="icon" type="image/png" href="Catherine_logo1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        sage: {
+                            50: '#f6f7f4',
+                            100: '#e8ebe3',
+                            200: '#d4daca',
+                            300: '#b5c0a5',
+                            400: '#96a67f',
+                            500: '#7a8c62',
+                            600: '#5f6f4c',
+                            700: '#4a573d',
+                            800: '#3d4733',
+                            900: '#343d2d',
+                        },
+                        cream: {
+                            50: '#fdfcf9',
+                            100: '#f9f6ef',
+                            200: '#f3eddf',
+                            300: '#e9dfc9',
+                            400: '#dccba8',
+                        },
+                        terracotta: {
+                            400: '#c9947a',
+                            500: '#b87d5f',
+                            600: '#a66a4c',
+                        },
+                    },
+                    fontFamily: {
+                        serif: ['Cormorant Garamond', 'Georgia', 'serif'],
+                        sans: ['Montserrat', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="font-sans text-gray-800 bg-cream-50 smooth-scroll">
+    <!-- Navigation -->
+    <nav class="bg-cream-50 shadow-sm sticky top-0 z-50 border-b border-sage-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex items-center">
+                    <a href="#home" class="logo">
+                        <img src="Catherine_logo1.png" alt="Wellness to Wholeness Resource Hub">
+                    </a>
+                </div>
+                <div class="hidden md:flex items-center space-x-6">
+                    <a href="#home" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Home</a>
+                    <a href="#oils" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Essential Oils</a>
+                    <a href="#food" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Nutrition</a>
+                    <a href="#exercise" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Exercise</a>
+                    <a href="#mind" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Mindfulness</a>
+                    <a href="#blog" class="text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium tracking-wide transition-colors">Blog</a>
+                    <a href="#contact" class="bg-sage-500 text-white px-5 py-2 rounded-full text-sm font-medium hover:bg-sage-600 transition-colors">Contact</a>
+                </div>
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden p-2 rounded-md text-gray-700 hover:bg-sage-100">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-cream-50 border-t border-sage-100">
+            <div class="px-4 py-3 space-y-2">
+                <a href="#home" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Home</a>
+                <a href="#oils" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Essential Oils</a>
+                <a href="#food" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Nutrition</a>
+                <a href="#exercise" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Exercise</a>
+                <a href="#mind" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Mindfulness</a>
+                <a href="#blog" class="block text-gray-700 hover:text-sage-600 px-3 py-2 text-sm font-medium">Blog</a>
+                <a href="#contact" class="block bg-sage-500 text-white px-3 py-2 rounded-md text-sm font-medium text-center">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-bg py-32 md:py-44">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
+            <h2 class="font-serif text-4xl md:text-6xl font-semibold text-white drop-shadow-lg leading-tight">Your Journey to Wellness Starts Here</h2>
+            <p class="mt-6 text-lg md:text-xl text-cream-100 drop-shadow-md font-light max-w-2xl mx-auto">Discover balance through essential oils, mindful nutrition, movement, and holistic practices.</p>
+            <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#oils" class="inline-block bg-sage-500 text-white px-8 py-3 rounded-full font-medium hover:bg-sage-600 transition-colors shadow-lg">Explore Resources</a>
+                <a href="#contact" class="inline-block bg-white/90 text-sage-700 px-8 py-3 rounded-full font-medium hover:bg-white transition-colors shadow-lg">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Oils Section -->
+    <section id="oils" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Essential Oils</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Discover the natural power of essential oils for your wellness journey.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Why They Work</h3>
+                    <p class="mt-3 text-gray-600">Learn the science behind aromatherapy and how oils enhance your mood and wellbeing.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 12h.01M12 12h.01M16 12h.01M21 12c0 4.418-4.03 8-9 8a9.863 9.863 0 01-4.255-.949L3 20l1.395-3.72C3.512 15.042 3 13.574 3 12c0-4.418 4.03-8 9-8s9 3.582 9 8z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Testimonials</h3>
+                    <p class="mt-3 text-gray-600">Read real stories from people who have transformed their lives with essential oils.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Shop Here</h3>
+                    <p class="mt-3 text-gray-600">Browse quality essential oils and find the perfect products for your needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Food Section -->
+    <section id="food" class="py-20 bg-cream-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Nourish Your Body</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Explore healthy recipes and nutrition tips to fuel your wellness journey.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Smoothie Recipes</h3>
+                    <p class="mt-3 text-gray-600">Quick and nutritious smoothie ideas for busy mornings.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2m-3 7h3m-3 4h3m-6-4h.01M9 16h.01"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Meal Prep Tips</h3>
+                    <p class="mt-3 text-gray-600">Plan your meals for a stress-free week.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Superfoods Guide</h3>
+                    <p class="mt-3 text-gray-600">Incorporate nutrient-dense foods into your diet.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exercise Section -->
+    <section id="exercise" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Move Your Body</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Find workouts and routines to stay active and energized.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Yoga Flows</h3>
+                    <p class="mt-3 text-gray-600">Gentle yoga sequences for all levels.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">HIIT Workouts</h3>
+                    <p class="mt-3 text-gray-600">High-intensity interval training for maximum results.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <div class="w-12 h-12 bg-sage-100 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-sage-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Walking Plans</h3>
+                    <p class="mt-3 text-gray-600">Simple steps to make walking a habit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mind Section -->
+    <section id="mind" class="py-20 bg-cream-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Calm Your Mind</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Practice mindfulness and mental wellness techniques.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Meditation Guides</h3>
+                    <p class="mt-3 text-gray-600">Learn to meditate for stress relief.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Journaling Prompts</h3>
+                    <p class="mt-3 text-gray-600">Reflect and grow through writing.</p>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-cream-300">
+                    <div class="w-12 h-12 bg-terracotta-400/20 rounded-full flex items-center justify-center mb-4">
+                        <svg class="w-6 h-6 text-terracotta-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900">Gratitude Practices</h3>
+                    <p class="mt-3 text-gray-600">Cultivate positivity daily.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="py-20 bg-sage-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Latest from the Blog</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Read the latest posts on wellness and lifestyle.</p>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <span class="text-xs font-medium text-sage-600 uppercase tracking-wider">Nutrition</span>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">5 Tips for Mindful Eating</h3>
+                    <p class="mt-3 text-gray-600">Learn how to eat with intention and enjoy every bite.</p>
+                    <a href="#" class="mt-4 inline-flex items-center text-sage-600 font-medium hover:text-sage-700">
+                        Read More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+                <div class="bg-white p-8 rounded-2xl shadow-sm hover:shadow-md transition-shadow border border-sage-100">
+                    <span class="text-xs font-medium text-sage-600 uppercase tracking-wider">Lifestyle</span>
+                    <h3 class="mt-2 text-xl font-semibold text-gray-900">Morning Routines for Energy</h3>
+                    <p class="mt-3 text-gray-600">Start your day with these energizing habits.</p>
+                    <a href="#" class="mt-4 inline-flex items-center text-sage-600 font-medium hover:text-sage-700">
+                        Read More
+                        <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-cream-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="font-serif text-3xl md:text-4xl font-semibold text-gray-900">Get in Touch</h2>
+                <p class="mt-4 text-gray-600 max-w-2xl mx-auto">Have questions or want to join the wellness journey? We'd love to hear from you.</p>
+            </div>
+            <div class="max-w-lg mx-auto">
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="bg-white p-8 rounded-2xl shadow-sm border border-cream-300">
+                    <div class="space-y-5">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700 mb-1">Name</label>
+                            <input type="text" id="name" name="name" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-sage-500 transition-colors" placeholder="Your Name">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+                            <input type="email" id="email" name="email" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-sage-500 transition-colors" placeholder="your@email.com">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Message</label>
+                            <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-sage-500 focus:border-sage-500 transition-colors resize-none" placeholder="How can we help you?"></textarea>
+                        </div>
+                        <button type="submit" class="w-full bg-sage-500 text-white px-6 py-3 rounded-full font-medium hover:bg-sage-600 transition-colors shadow-md">
+                            Send Message
+                        </button>
+                    </div>
+                </form>
+                <p class="text-center text-sm text-gray-500 mt-4">We typically respond within 24-48 hours.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-sage-800 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <h3 class="font-serif text-xl text-white">Wellness to Wholeness</h3>
+                    <p class="text-sage-300 text-sm mt-1">Your journey to balanced living</p>
+                </div>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-sage-300 hover:text-white transition-colors" aria-label="Facebook">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </a>
+                    <a href="#" class="text-sage-300 hover:text-white transition-colors" aria-label="Instagram">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.067.06 1.407.06 4.123v.08c0 2.643-.012 2.987-.06 4.043-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.067.048-1.407.06-4.123.06h-.08c-2.643 0-2.987-.012-4.043-.06-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.047-1.024-.06-1.379-.06-3.808v-.63c0-2.43.013-2.784.06-3.808.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 015.45 2.525c.636-.247 1.363-.416 2.427-.465C8.901 2.013 9.256 2 11.685 2h.63zm-.081 1.802h-.468c-2.456 0-2.784.011-3.807.058-.975.045-1.504.207-1.857.344-.467.182-.8.398-1.15.748-.35.35-.566.683-.748 1.15-.137.353-.3.882-.344 1.857-.047 1.023-.058 1.351-.058 3.807v.468c0 2.456.011 2.784.058 3.807.045.975.207 1.504.344 1.857.182.466.399.8.748 1.15.35.35.683.566 1.15.748.353.137.882.3 1.857.344 1.054.048 1.37.058 4.041.058h.08c2.597 0 2.917-.01 3.96-.058.976-.045 1.505-.207 1.858-.344.466-.182.8-.398 1.15-.748.35-.35.566-.683.748-1.15.137-.353.3-.882.344-1.857.048-1.055.058-1.37.058-4.041v-.08c0-2.597-.01-2.917-.058-3.96-.045-.976-.207-1.505-.344-1.858a3.097 3.097 0 00-.748-1.15 3.098 3.098 0 00-1.15-.748c-.353-.137-.882-.3-1.857-.344-1.023-.047-1.351-.058-3.807-.058zM12 6.865a5.135 5.135 0 110 10.27 5.135 5.135 0 010-10.27zm0 1.802a3.333 3.333 0 100 6.666 3.333 3.333 0 000-6.666zm5.338-3.205a1.2 1.2 0 110 2.4 1.2 1.2 0 010-2.4z"/></svg>
+                    </a>
+                    <a href="#" class="text-sage-300 hover:text-white transition-colors" aria-label="Twitter">
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                    </a>
+                </div>
+            </div>
+            <div class="border-t border-sage-700 mt-8 pt-8 text-center">
+                <p class="text-sage-400 text-sm">© 2025 Wellness to Wholeness. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking a link
+        mobileMenu.querySelectorAll('a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
